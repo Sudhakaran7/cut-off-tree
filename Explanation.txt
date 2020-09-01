@@ -1,0 +1,73 @@
+You are asked to cut off trees in a forest for a golf event. The forest is represented as a non-negative 2D map, in this map:
+0 represents the obstacle can't be reached.
+1 represents the ground can be walked through.
+The place with number bigger than 1 represents a tree can be walked through, and this positive number represents the tree's height.
+In one step you can walk in any of the four directions top, bottom, left and right also when standing in a point which is a tree you can decide whether or not to cut off the tree.
+You are asked to cut off all the trees in this forest in the order of tree's height - always cut off the tree with lowest height first. And after cutting, the original place has 
+the tree will become a grass (value 1).
+You will start from the point (0, 0) and you should output the minimum steps you need to walk to cut off all the trees.
+If you can't cut off all the trees, output -1 in that situation.
+You are guaranteed that no two trees have the same height and there is at least one tree needs to be cut off.
+
+Input Description:
+Frist line contains, N the size of forest.
+Rest line contains, NxN matrix as forest.
+
+Output Description:
+Print the  minimum steps you need to walk to cut off all the trees.
+
+Sample Input:
+3
+2 3 4
+0 0 5
+8 7 6
+
+Sample Output:
+6
+
+Explanation:
+You started from the point (0,0) and you can cut off the tree in (0,0) directly without walking.
+
+Sample Input:
+3
+1 2 3
+0 0 4
+7 6 5
+
+Sample Output:
+6
+
+Sample Input:
+2
+1 3
+4 5
+
+Sample Output:
+4
+
+Sample Input:
+3
+1 2 3
+4 5 6
+7 8 9
+
+Sample Output:
+12
+
+Sample Input:
+4
+12 11 13 5
+23 24 25 6
+4 3 2 1
+6 5 4 3
+
+Sample Output:
+45
+
+Sample Input:
+2
+22 23
+24 25
+
+Sample Output:
+4
